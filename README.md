@@ -16,3 +16,20 @@ Website donasi yang dibuat guna memenuhi tugas besar mata kuliah pemrograman web
 1. Adinda Khaerani - M0519005
 2. Annas Abdurrahman - M0519017
 3. Arilya Syaharani - M0519020
+
+## Instalasi
+
+- Clone repositori 
+- Salin file __.env.example__ to __.env__ dan masukkan nama database serta email untuk layanan notifikasi verifikasi email pengguna
+- Jalankan ```composer install```
+- Jalankan  ```php artisan key:generate```
+- Jalankan  ```php artisan migrate --seed```
+- Jalankan ```php artisan storage:link```
+- Jalankan ```npm install```
+- Jalankan ```npm run dev```
+- Import __data.sql__ ke database
+
+## Build
+- Jalankan ```php artisan serve```
+- Buka url aplikasi
+- Login denga akun __annasabdurrahman@admin.com__ dengan password __admin1__
