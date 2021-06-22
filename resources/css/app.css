@@ -1,0 +1,73 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import "theme.css";
+@import "select2/dist/css/select2.min";
+@import "select.css";
+@import "dropzone/dist/dropzone";
+@import "flatpickr/dist/flatpickr.min";
+
+@layer components {
+    /* Reference: https://github.com/twbs/bootstrap/pull/31955/ */
+    ::file-selector-button {
+      @apply text-gray-300 bg-indigo-400 hover:bg-indigo-500
+        font-medium text-sm cursor-pointer
+        border-0 border-r border-solid border-gray-300
+        py-2.5 pl-8 pr-4;
+      margin-inline-start: -1rem;
+      margin-inline-end: 1rem;
+    }
+    ::-webkit-file-upload-button {
+      @apply text-gray-300 bg-indigo-400 hover:bg-indigo-500
+        font-medium text-sm cursor-pointer
+        border-0 border-r border-solid border-gray-300
+        py-2.5 pl-8 pr-4;
+      margin-inline-start: -1rem;
+      margin-inline-end: 1rem;
+    }
+}
+
+@layer base {
+    h1 {
+      @apply text-2xl text-blue-900 font-semibold
+    }
+    h2 {
+      @apply text-xl text-blue-800 font-medium
+    }
+    h3 {
+      @apply text-lg text-blue-800 font-medium
+    }
+    ul{
+        @apply list-disc
+    }
+    li {
+        @apply text-gray-500
+    }
+    ol{
+        @apply list-decimal
+    }
+    p{
+        @apply text-justify text-gray-700
+    }
+}
+
+blockquote {
+    background:
+        linear-gradient(to right, #039be5 6px, transparent 4px) 0 100%,
+        linear-gradient(to left, #039be5 6px, transparent 4px) 100% 0,
+        linear-gradient(to bottom, #039be5 6px, transparent 4px) 100% 0,
+        linear-gradient(to top, #039be5 6px, transparent 4px) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.component {
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+blockquote{
+    @aplly max-w-md relative text-indigo-400 text-center px-16 w-full py-6
+}
