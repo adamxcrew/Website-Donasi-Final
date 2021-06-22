@@ -77,7 +77,7 @@ class Index extends Component
 
         $programBeritas = $query->paginate($this->perPage);
 
-        return view('livewire.admin.program-berita.index', compact('query', 'programBeritas', 'programBerita'));
+        return view('livewire.admin.program-berita.index', compact('query', 'programBeritas', 'programBeritas'));
     }
 
     public function deleteSelected()

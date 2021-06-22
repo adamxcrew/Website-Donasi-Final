@@ -8,11 +8,9 @@
                 Daftar
             </h6>
 
-            @can('program_berita_create')
                 <a class="btn btn-indigo" href="{{ route('admin.program-berita.create') }}">
                     Tambah Berita
                 </a>
-            @endcan
         </div>
     </div>
     @livewire('admin.program-berita.index')

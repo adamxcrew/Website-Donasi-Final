@@ -27,7 +27,7 @@ use App\Http\Livewire\Guest\Saran\KirimSaran;
 use App\Http\Livewire\Guest\KonfirmasiDonasi\KonfirmasiDonasi;
 use App\Http\Livewire\Guest\PenggalanganDana\PenggalanganDana;
 use App\Http\Livewire\Guest\PostinganProgram\PostinganProgram;
-use App\Models\ProgramBerita;
+use App\Http\Controllers\Admin\ProgramBeritaController;
 use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
@@ -88,7 +88,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 'v
     Route::resource('program-donasi', ProgramDonasiController::class, ['except' => ['store', 'update', 'destroy']]);
 
     // Program Berita
-    Route::resource('program-berita', ProgramBerita::class, ['except' => ['store', 'update', 'destroy']]);
+    Route::resource('program-berita', ProgramBeritaController::class, ['except' => ['store', 'update', 'destroy']]);
 
     // Donasi
     Route::resource('donasi', DonasiController::class, ['except' => ['store', 'update', 'destroy']]);

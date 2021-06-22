@@ -41,7 +41,7 @@
                 @can('administrasi_access')
                     <li class="items-center">
                         <a class="has-sub {{ request()->is("admin/agama*")||request()->is("admin/bank*")||request()->is("admin/profesi*")||request()->is("admin/provinsi*")||request()->is("admin/kabupaten*")||request()->is("admin/kecamatan*")||request()->is("admin/kelurahan*") ? "sidebar-nav-active" : "sidebar-nav" }}" href="#" onclick="window.openSubNav(this)">
-                            <i class="fa-fw fas fa-users c-sidebar-nav-icon">
+                            <i class="fas fa-database c-sidebar-nav-icon">
                             </i>
                             Administrasi
                         </a>
