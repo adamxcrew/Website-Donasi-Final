@@ -32,4 +32,4 @@ Website donasi yang dibuat guna memenuhi tugas besar mata kuliah pemrograman web
 ## Build
 - Jalankan ```php artisan serve```
 - Buka url aplikasi
-- Login denga akun __annasabdurrahman@admin.com__ dengan password __admin1__
+- Login dengan akun __annasabdurrahman@admin.com__ dengan password __admin1__
