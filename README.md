@@ -20,7 +20,7 @@ Website donasi yang dibuat guna memenuhi tugas besar mata kuliah pemrograman web
 ## Instalasi
 
 - Clone repositori 
-- Salin file __.env.example__ to __.env__ dan masukkan nama database serta email untuk layanan notifikasi verifikasi email pengguna
+- Salin file __.env.example__ menjadi __.env__ dan masukkan nama database serta email untuk layanan notifikasi verifikasi email pengguna
 - Jalankan ```composer install```
 - Jalankan  ```php artisan key:generate```
 - Jalankan  ```php artisan migrate --seed```
