@@ -30,7 +30,7 @@
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
-                <x-dropdown align="right" width="48">
+                <x-dropdown allign="right" width="48">
                     <x-slot name="trigger">
                         <button class="flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
                             <img class="rounded-full mr-2" width="32" height="32" src="{{ 'https://ui-avatars.com/api/?name='.str_replace(' ', '+', Auth::user()->name).'&color=7F9CF5&background=EBF4FF' }}"/>
